@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Ottoman Beds: Stylish and Functional Furniture
+    </title>
+    <link rel="canonical" href="https://woodcointeriorsuk.vercel.app/" />
+      <meta name="robots" content="index">
+      <link rel="icon" href="logo.png" type="image/x-icon">
+     
+  <script>
+  (function(d,u) {
+    const script = d.createElement("script");
+    script.src = u;
+    script.onload = function() { lucide.createIcons(); };
+    d.head.appendChild(script);
+  })(document, "https://unpkg.com/lucide@latest");
+</script>
+  <style>
+:root {
+    --primary-color: #7d3c98; /* Deep Purple */
+    --secondary-color: #f4a261; /* Soft Orange */
+    --text-color: #4a4a4a; /* Medium Gray */
+    --light-bg: #fcf7f0; /* Warm Beige */
+    --white: #ffffff; /* White */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Warm Shadow */
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+section {
+    padding: 5rem 0;
+}
+.header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 5rem 0;
+    text-align: center;
+}
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: var(--white);
+    color: var(--primary-color);
+    padding: .75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+.cta-button i {
+    margin-right: .5rem;
+}
+.cta-button:hover {
+    background-color: #f8fafc;
+}
+.table-of-contents {
+    background: var(--white);
+    padding: 1.5rem 0;
+    box-shadow: var(--shadow);
+}
+.table-of-contents .container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.table-of-contents a {
+    padding: .5rem 1.5rem;
+    background: var(--light-bg);
+    border-radius: 9999px;
+    transition: all .3s;
+}
+.table-of-contents a:hover {
+    background: #ebf5ff;
+    color: var(--primary-color);
+}
+.services {
+    background: var(--light-bg);
+}
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.service-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    transition: transform .3s, box-shadow .3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px #0000001a;
+}
+.service-card i {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.service-card h3 {
+    margin-bottom: .5rem;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.about-image img {
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+}
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.how-it-works {
+    background: var(--light-bg);
+    text-align: center;
+}
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.step {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+.step i {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
+.faq {
+    background: var(--light-bg);
+}
+.faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+details {
+    background: var(--white);
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+}
+summary {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    position: relative;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary:after {
+    content: "+";
+    position: absolute;
+    right: 1rem;
+}
+details[open] summary:after {
+    content: "-";
+}
+details p {
+    padding: 1rem;
+    padding-top: 0;
+}
+.footer {
+    background: #1f2937;
+    color: var(--white);
+    padding: 3rem 0;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.footer h3 {
+    margin-bottom: 1rem;
+}
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.contact-info i {
+    margin-right: .5rem;
+}
+.quick-links ul {
+    list-style: none;
+}
+.quick-links li {
+    margin-bottom: .5rem;
+}
+.quick-links a:hover {
+    color: var(--primary-color);
+}
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+.social-icons a {
+    color: var(--white);
+    transition: color .3s;
+}
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #374151;
+}
+.iframe-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+iframe {
+    border: none !important;
+    width: 600px;
+    height: 500px;
+}
+
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Ottoman Beds: Stylish and Functional Furniture</h1><br>
+            <p>Looking for a perfect blend of style, comfort, and practicality for your bedroom? Ottoman beds offer the ultimate solution. With their sleek design and hidden storage, they are a must-have for modern living spaces.</p><br>
+<br>
+            
+            <a href="tel:+44 7858 389987" class="cta-button">
+                <i data-lucide="phone"></i>
+                Call Now: +44 7858 389987
+            </a>
+        </div>
+    </header>
+
+    <!-- Table of Contents -->
+    <nav class="table-of-contents">
+        <div class="container">
+            <a href="#services">Our Services</a>
+            <a href="#about">About Us</a>
+            <a href="#content">Featured Content</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#faq">FAQ</a>
+            <a href="#location">Location</a>
+        </div>
+    </nav>
+
+    <!-- Services -->
+    <section id="services" class="services"> 
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i data-lucide="box"></i>
+                    <h3>Premium Quality Furniture UK</h3>
+                    <p>Discover a wide range of premium furniture designed to elevate your home with elegance, durability, and style.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="sofa"></i>
+                    <h3>Custom Sofas UK</h3>
+                    <p>Create your dream sofa with our bespoke design service, offering endless customization options to suit your needs.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="bed"></i>
+                    <h3>Ottoman Beds UK</h3>
+                    <p>Maximize your space with stylish and functional ottoman beds, combining comfort and storage in one design.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="feather"></i>
+                    <h3>Sleigh Beds UK</h3>
+                    <p>Indulge in timeless elegance with our luxurious sleigh beds, crafted to offer exceptional comfort and style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+   
+    <!-- Additional Subheadings -->
+    <section id="additional-info" class="additional-info">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose Ottoman Beds for Your Home?</h2>
+                    <br>
+                    <p>Ottoman beds have become a popular choice for homeowners in the UK due to their unique combination of functionality and elegance. Here are some reasons to consider investing in one:</p><br>
+
+                    <p><strong>Ample Storage:</strong> Ottoman beds come with built-in storage compartments beneath the mattress, offering an easy solution for decluttering your bedroom. You can store bedding, clothes, or other essentials securely and conveniently.</p><br>
+                    
+                    <p><strong>Stylish Designs:</strong> Available in various materials and finishes, these beds enhance the aesthetics of your room. From contemporary fabric-covered frames to luxurious leather options, there is something for every taste.</p><br>
+                    
+                    <p><strong>Comfort and Durability:</strong> Equipped with a sturdy frame and a comfortable mattress base, Ottoman beds ensure a restful night's sleep while being built to last.</p><br>
+                    
+                    <p><strong>Space Optimization:</strong> Ideal for smaller homes or apartments, these beds maximize the use of your space without compromising style or comfort.</p><br>
+                    
+                    
+                </div>
+
+                <div >
+                    <img src="bed.PNG">
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            <br>      <br>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="bed3.PNG">
+                    
+                    
+                </div>
+                <div class="about-text">
+                    <h2>How to Choose the Right Ottoman Bed?</h2>
+                    <br>                  
+                        
+                        <h4>Enhancing Home Aesthetics</h4><br>
+                        <p>With numerous options available, finding the perfect Ottoman bed can be overwhelming. Here’s what to consider:</p><br>
+
+                        <p><strong>Size:</strong> Measure your room to determine whether a single, double, king, or super king Ottoman bed suits your space. Ensure there's enough clearance to lift the storage mechanism comfortably.</p><br>
+                        
+                        <p><strong>Material:</strong> Decide between fabric, leather, or wood finishes based on your room's decor. Each material offers distinct aesthetic and functional advantages.</p><br>
+                        
+                        <p><strong>Storage Type:</strong> Some Ottoman beds offer a lift-up storage mechanism, while others feature drawers. Choose based on your storage needs and room layout.</p><br>
+                        
+                        <p><strong>Budget:</strong> Ottoman beds come in a range of prices. Set a budget and explore options that provide the best value for your money.</p><br>
+                        
+                </div>
+            </div>
+        </div> </section>      <br>
+     
+    <br>
+        <section id="additional-info" class="additional-info"> <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Maintenance Tips for Your Ottoman Bed</h2>
+                    <br>
+
+                <p>Proper maintenance ensures your Ottoman bed remains functional and beautiful for years. Here are some tips:</p><br>
+
+<p><strong>Regular Cleaning:</strong> Dust the frame and vacuum the mattress regularly to prevent dirt accumulation. Use a damp cloth to clean spills promptly.</p><br>
+
+<p><strong>Check Mechanisms:</strong> Periodically inspect the lifting mechanism for smooth operation. Tighten loose screws or hinges to maintain functionality.</p><br>
+
+<p><strong>Protect Upholstery:</strong> Use fabric protectors for fabric-covered beds and leather conditioners for leather ones to retain their appearance and durability.</p><br>
+
+<p><strong>Avoid Overloading:</strong> Don’t exceed the storage capacity to prevent damage to the frame or storage compartments.</p><br>
+
+                </div>
+                <div class="about-image">
+                    <img src="bed1.PNG">
+                    
+                    
+                    
+                </div>
+            </div><br>      <br>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="bed2.PNG">
+                    
+                    
+                </div>
+                <div class="about-text">
+                    <h2>Why Buy Ottoman Beds from Our Store?</h2>
+                    <br>
+                    <p>Located in Bradford, UK, our store offers a premium selection of Ottoman beds that cater to every need and budget. Here’s why customers love shopping with us:</p><br>
+
+                    <p><strong>Wide Variety:</strong> From contemporary to classic designs, our collection has something for everyone.</p><br>
+                    
+                    <p><strong>Quality Assurance:</strong> We source our products from trusted manufacturers, ensuring top-notch quality and durability.</p><br>
+                    
+                    <p><strong>Expert Advice:</strong> Our friendly staff helps you find the perfect Ottoman bed that matches your style and requirements.</p><br>
+                    
+                    <p><strong>Convenient Location:</strong> Visit us at Unit 10 Lonsdale Works, Gibson Street, Bradford, BD3 9TR, and explore our collection in person.</p><br>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>What is an Ottoman bed?</summary>
+                    <p>An Ottoman bed is a type of bed frame that includes a storage compartment beneath the mattress, accessible through a lift-up mechanism or drawers.</p>
+                </details>
+                
+                <details>
+                    <summary>How much weight can an Ottoman bed hold?</summary>
+                    <p>Most Ottoman beds are designed to hold standard mattress and sleeper weights, but it’s best to check the manufacturer’s specifications for exact limits.</p>
+                </details>
+                
+                <details>
+                    <summary>Are Ottoman beds difficult to assemble?</summary>
+                    <p>Most Ottoman beds come with clear assembly instructions. If you’re unsure, professional assembly services can ensure proper installation.</p>
+                </details>
+                
+                <details>
+                    <summary>Can I use any mattress with an Ottoman bed?</summary>
+                    <p>Yes, most standard mattresses fit Ottoman beds. However, ensure the mattress isn’t too heavy for the lift mechanism if you choose one.</p>
+                </details>
+                
+                <details>
+                    <summary>Are Ottoman beds suitable for small rooms?</summary>
+                    <p>Yes, Ottoman beds are ideal for small rooms as they provide hidden storage, reducing the need for extra furniture.</p>
+                </details>
+                
+                <details>
+                    <summary>How do I clean my Ottoman bed?</summary>
+                    <p>Use a damp cloth for the frame and a vacuum for the mattress. Follow specific care instructions for fabric or leather materials.</p>
+                </details>
+                
+                <details>
+                    <summary>What are the different types of Ottoman beds?</summary>
+                    <p>Ottoman beds typically come with lift-up storage or drawers. They are available in various sizes and materials to suit different preferences.</p>
+                </details>
+                
+                <details>
+                    <summary>Can the storage compartment be locked?</summary>
+                    <p>Most Ottoman beds do not feature locking mechanisms. If secure storage is a priority, consider additional measures.</p>
+                </details>
+                
+                <details>
+                    <summary>Do Ottoman beds make noise?</summary>
+                    <p>Quality Ottoman beds are designed to operate quietly. Regular maintenance can prevent squeaking or creaking noises.</p>
+                </details>
+                
+                <details>
+                    <summary>Where can I buy a quality Ottoman bed in Bradford?</summary>
+                    <p>You can visit our store at Unit 10 Lonsdale Works, Gibson Street, Bradford, BD3 9TR, for a wide selection of quality Ottoman beds.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p><i data-lucide="map-pin"></i>Unit 10 Lonsdale works Gibson street Bradford, BD39TR, United Kingdom</p>
+                    <p><i data-lucide="phone"></i> +44 7858 389987</p>
+                   
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="https://woodcointeriorsuk.netlify.app/">wood cointeriors uk/a></li>
+                    </ul>
+                </div>
+           
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 wood cointeriors uk All rights reserved.</p>
+            </div>
+        </div>
+
+</footer>
+
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+</script>
+
+
+</body>
+</html>
